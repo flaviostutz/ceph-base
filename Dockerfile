@@ -7,3 +7,5 @@ RUN apt-get update
 
 RUN apt-get install -y ceph
 RUN apt-get install -y gettext
+RUN apt-get install -y etcd-client
+
