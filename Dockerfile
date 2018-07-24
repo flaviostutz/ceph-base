@@ -6,7 +6,6 @@ RUN echo deb https://download.ceph.com/debian-mimic/ $(lsb_release -sc) main | t
 RUN apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y ceph
-RUN apt-get install -y iproute2
-RUN apt-get install -y gettext
+RUN apt-get install -y iproute2 uuid-runtime gettext
 RUN apt-get install -y etcd-client
 
