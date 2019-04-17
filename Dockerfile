@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-
+RUN echo '13.2.0.4'
 RUN apt-get update && apt-get install -y wget gnupg lsb-release
 
 RUN wget -q -O- 'https://download.ceph.com/keys/release.asc' | apt-key add -
