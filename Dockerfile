@@ -11,3 +11,6 @@ RUN apt-get install -y iproute2 uuid-runtime gettext
 RUN apt-get install -y etcd-client
 RUN ceph --version
 
+RUN wget https://raw.githubusercontent.com/fsaintjacques/semver-tool/master/src/semver -O /bin/semver
+RUN chmod +x /bin/semver
+
